@@ -1,0 +1,45 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>4 Wheeler SUV Car Landing Page</title>
+<link rel="stylesheet" href="{{ url_for('static', path='css/style.css') }}">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="{{ url_for('static', path='js/script.js') }}"></script>
+</head>
+<body>
+<header>
+<h1>4 Wheeler SUV Car</h1>
+<nav>
+<a href="#assembly">Assembly</a>
+<a href="#dismantle">Dismantle</a>
+</nav>
+</header>
+<main>
+<section id="assembly">
+<h2>Assembly</h2>
+<p>
+Here's how the 4 Wheeler SUV Car is assembled.
+</p>
+<a href="{{ url_for('assemble') }}" class="trigger-assembly">Trigger Assembly</a>
+</section>
+<section id="dismantle">
+<h2>Dismantle</h2>
+<p>
+And here's how the car is dismantled.
+</p>
+<a href="{{ url_for('dismantle') }}" class="trigger-dismantle">Trigger Dismantle</a>
+</section>
+</main>
+<footer>
+<p>Copyright &copy; Your Company Name</p>
+</footer>
+</body>
+</html>
+
+
+
